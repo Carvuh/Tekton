@@ -1,0 +1,6 @@
+c:\users\justi\documents\visual studio 2015\Projects\Tekton\Tekton\bin\Debug\Tekton.exe.config
+c:\users\justi\documents\visual studio 2015\Projects\Tekton\Tekton\bin\Debug\Tekton.exe
+c:\users\justi\documents\visual studio 2015\Projects\Tekton\Tekton\bin\Debug\Tekton.pdb
+c:\users\justi\documents\visual studio 2015\Projects\Tekton\Tekton\obj\Debug\Tekton.csprojResolveAssemblyReference.cache
+c:\users\justi\documents\visual studio 2015\Projects\Tekton\Tekton\obj\Debug\Tekton.exe
+c:\users\justi\documents\visual studio 2015\Projects\Tekton\Tekton\obj\Debug\Tekton.pdb
