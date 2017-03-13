@@ -12,8 +12,10 @@ namespace Tekton {
         //
 
         static string currentProjectName;
+        static string hierarchyIndicator = "~";
         static string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
         static bool isProjectMode = false;
+        static bool projectRoot = true;
 
         static void Main(string[] args) {
             if (args.Length <= 0) {
@@ -59,18 +61,18 @@ namespace Tekton {
             Console.Write(userName);
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write(":" + projectName);
+            Console.Write(":{0} ", projectName);
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write(" ~");
+            Console.Write(hierarchyIndicator);
             Console.ResetColor();
             Console.Write(" > ");
         }
 
         public static void TektonProjectCLI(string projectName, string userName) {
             ImplementCustomHeader(projectName, userName);
-            string something = Console.ReadLine();
-            InputParser.InputManager(something);
+            string userInput = Console.ReadLine();
+            InputParser.InputManager(userInput);
         }
 
         public static void GetConsoleInput() {
@@ -90,6 +92,10 @@ namespace Tekton {
 
         public static string GetUserName() {
             return userName;
+        }
+
+        public static void SetProjectPath(string path) {
+            hierarchyIndicator = path;
         }
 
         public static void StartTekton() {
