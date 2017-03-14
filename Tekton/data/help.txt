@@ -1,0 +1,8 @@
+Hi there! Welcome to Tekton! Hopefully this is helping you create your own worlds!
+These are some of the commands that may help you.
+	> help
+	> clear / cls
+	> q / quit / exit
+	> ls
+	> cd {directory/category}
+	> create -- Allow you to create a new folder/file entry relating to your project.

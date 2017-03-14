@@ -58,7 +58,7 @@ namespace Tekton {
             // Create a custom header for the world to see things neatly...
             // Hoping this works. Damn Windows CMD... Always screwing colors up...
             Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.Write(userName);
+            Console.Write("@{0}", userName);
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write(":{0} ", projectName);
